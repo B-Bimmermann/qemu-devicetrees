@@ -2061,61 +2061,6 @@
 			phandle = <0xc>;
 		};
 
-		rpu_cpu0: rpu_cpu@0 {
-			compatible = "cortex-r5f-arm-cpu";
-			d-cache-line-size = <0x20>;
-			d-cache-size = <0x8000>;
-			device_type = "cpu";
-			i-cache-line-size = <0x20>;
-			i-cache-size = <0x8000>;
-			arm,midr = <0x411fc153>;
-			arm,tcmtr = <0x10001>;
-			arm,ctr = <0x8003c003>;
-			arm,clidr = <0x9200003>;
-			arm,ccsidr0 = <0xf01fe019>;
-			arm,ccsidr1 = <0xf01fe019>;
-			arm,mp-affinity = <0x100>;
-			arm,id_pfr0 = <0x131>;
-			arm,reset-hivecs = <0x1>;
-			#interrupt-cells = <0x1>;
-			reg = <0x0>;
-			mr = <0x6d>;
-			memory = <0x6d>;
-			gpios = <0x5 0x0 0x6e 0x0 0x6e 0x7 0x6e 0x5 0x16 0x9>;
-			gpio-names = "reset", "ncpuhalt", "vinithi", "wfi", "pwr_cntrl";
-			gdb-id = "Cortex-R5 #0";
-			memattr_ns = <0x6f>;
-			linux,phandle = <0x78>;
-			phandle = <0x78>;
-		};
-
-		rpu_cpu1: rpu_cpu@1 {
-			compatible = "cortex-r5f-arm-cpu";
-			d-cache-line-size = <0x20>;
-			d-cache-size = <0x8000>;
-			device_type = "cpu";
-			i-cache-line-size = <0x20>;
-			i-cache-size = <0x8000>;
-			arm,midr = <0x411fc153>;
-			arm,tcmtr = <0x10001>;
-			arm,ctr = <0x8003c003>;
-			arm,clidr = <0x9200003>;
-			arm,ccsidr0 = <0xf01fe019>;
-			arm,ccsidr1 = <0xf01fe019>;
-			arm,mp-affinity = <0x101>;
-			arm,id_pfr0 = <0x131>;
-			arm,reset-hivecs = <0x1>;
-			#interrupt-cells = <0x1>;
-			reg = <0x1>;
-			mr = <0x70>;
-			memory = <0x70>;
-			gpios = <0x5 0x1 0x6e 0x2 0x6e 0x1 0x6e 0x8 0x6e 0x6 0x16 0x9>;
-			gpio-names = "reset", "halt", "ncpuhalt", "vinithi", "wfi", "pwr_cntrl";
-			gdb-id = "Cortex-R5 #1";
-			memattr_ns = <0x71>;
-			linux,phandle = <0x79>;
-			phandle = <0x79>;
-		};
 	};
 
 	aliases {
